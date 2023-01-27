@@ -1,0 +1,208 @@
+/*CSS reset*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*END css reset*/
+/*TYPOGRAPHY*/
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: #252527;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: white;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 4.209rem;
+}
+
+h2 {font-size: 3.157rem;}
+
+h3 {font-size: 2.369rem;}
+
+h4 {font-size: 1.777rem;}
+
+h5 {font-size: 1.333rem;}
+
+small, .text_small {font-size: 0.75rem;}
+/*END typography*/
+/*global styles*/
+a{
+    text-decoration: none;
+    color: white;
+}
+.d-flex{
+    display: flex;
+  }
+  .y-c{
+    align-items: center;
+  }
+  .x-bw{
+    justify-content: space-between;
+  }
+  h1{
+    color: #c7a15b;
+    font-weight: 500;
+  }
+  .wrapper{
+    max-width: 1400px;
+    padding: 1em 0 1em 1em;
+  }
+/*end global styles*/
+/*main styles*/
+nav{
+    padding: 2em;
+}
+nav a{
+    font-size: small;
+    margin-right: 1em;
+}
+.hero{
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.left{
+    position: relative;
+}
+.right{
+    position: relative;
+}
+#skull{
+    position: absolute;
+    right: 50px;
+    top: -150px;
+    width: 500px;
+}
+.left h1{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+.nr{
+    margin-right: 1em;
+    padding: 0;
+}
+.nr p{
+    margin-bottom: 0;
+    font-size: x-small;
+}
+.nr hr{
+    margin-top: 0;
+}
+.pages{
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+.active p{
+   color: #c7a15b;
+   font-size: small;
+}
+.active hr{
+    border: 1px solid #c7a15b;
+    width: 2em;
+}
+.menu{
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    right: 0;
+}
+.menu p{
+    font-size: x-small;
+}
+.menu .nool{
+    margin-top: 150px;
+}
+/*end main styles*/
