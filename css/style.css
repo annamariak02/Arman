@@ -79,7 +79,7 @@ select {
 html {font-size: 100%;} /*16px*/
 
 body {
-  background: #252527;
+  background: #232325;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.75;
@@ -97,115 +97,128 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 4.209rem;
+  font-size: 5.653rem;
 }
 
-h2 {font-size: 3.157rem;}
+h2 {font-size: 3.998rem;}
 
-h3 {font-size: 2.369rem;}
+h3 {font-size: 2.827rem;}
 
-h4 {font-size: 1.777rem;}
+h4 {font-size: 1.999rem;}
 
-h5 {font-size: 1.333rem;}
+h5 {font-size: 1.414rem;}
 
-small, .text_small {font-size: 0.75rem;}
+small, .text_small {font-size: 0.707rem;}
 /*END typography*/
 /*global styles*/
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+  font-size: x-small;
 }
-.d-flex{
-    display: flex;
-  }
-  .y-c{
-    align-items: center;
-  }
-  .x-bw{
-    justify-content: space-between;
-  }
-  h1{
-    color: #c7a15b;
-    font-weight: 500;
-  }
-  .wrapper{
+.wrapper{
     max-width: 1400px;
-    padding: 1em 0 1em 1em;
-  }
-/*end global styles*/
+    margin: 0 auto;
+  padding: 1em;}
+.d-flex {
+  display: flex;
+}
+.x-bw{
+  justify-content: space-between;
+}
+.y-c{
+  align-items: center;
+}
+/*END global styles*/
 /*main styles*/
-nav{
-    padding: 2em;
-}
-nav a{
-    font-size: small;
-    margin-right: 1em;
-}
-.hero{
-    display: grid;
+.main{
+  display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
-.left{
-    position: relative;
+nav{
+  align-items: baseline;
 }
-.right{
-    position: relative;
+.nav a{
+  margin-right: 3rem;
 }
-#skull{
-    position: absolute;
-    right: 50px;
-    top: -150px;
-    width: 500px;
+.logo{
+  margin-right: 6rem;
 }
-.left h1{
-    position: absolute;
-    top: 120px;
-    left: 50px;
+h1{
+  color: #c6a15a;
+  font-weight: 500;
 }
-.nr{
-    margin-right: 1em;
-    padding: 0;
+.pgnr{
+  margin-right: 1em;
+  font-size: x-small;
 }
-.nr p{
-    margin-bottom: 0;
-    font-size: x-small;
+.pgnr p{
+  margin-bottom: 0;
 }
-.nr hr{
-    margin-top: 0;
+.pgnr hr{
+  margin-top: 0;
 }
-.pages{
-    position: absolute;
-    top: 300px;
-    left: 80px;
+i{
+  color: white;
 }
-.active p{
-   color: #c7a15b;
-   font-size: small;
+.active{
+  color: #c6a15a;
 }
 .active hr{
-    border: 1px solid #c7a15b;
-    width: 2em;
+  border:1px solid #c6a15a;
+  width: 3em;
+}
+.first{
+  position: relative;
+}
+.cap{
+  position: absolute;
+  top: 150px;
+  left: 80px;
+}
+.pages{
+  position: absolute;
+  top: 500px;
+  left: 120px;
+}
+.second{
+  position: relative;
+}
+#skull{
+  position: absolute;
+  width: max-content;
+  top: -120px;
+  right: 50px;
+}
+.skull{
+  width: 600px;
 }
 .menu{
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
-    background-color: black;
-    width: fit-content;
-    height: fit-content;
-    position: fixed;
-    right: 0;
+  position: fixed;
+  right: 0px;
+  top: 100px;
+  flex-direction: column;
+  align-items: center;
+  width: 70px;
+  height: max-content;
+  background-color: black;
 }
-.menu p{
-    font-size: x-small;
+.menu2{
+  flex-direction: column;
+  align-items: center;
 }
-.menu .nool{
-    margin-top: 150px;
+.symbol{
+  color: rgb(201, 198, 198);
 }
-.hero-copy img{
-  width: 100px;
+.nool{
+  margin-top: 150px;
 }
-/*end main styles*/
+.search{
+  position: absolute;
+  right: 10px;
+  top: 500px;
+}
+/*END main styles*/
