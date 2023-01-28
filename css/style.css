@@ -85,7 +85,14 @@ body {
   line-height: 1.75;
   color: white;
 }
+@font-face { font-family: montserrat; src: url('/assets/fonts/montserrat-font/MontserratBlack-3zOvZ.ttf'); }
+p {margin-bottom: 1rem;}
 
+.big-txt{
+    font-family: montserray;
+    font-size: 14em;
+    mix-blend-mode: difference;
+}
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
@@ -195,6 +202,7 @@ i{
 }
 .skull{
   width: 600px;
+
 }
 .menu{
   position: fixed;
@@ -220,5 +228,53 @@ i{
   position: absolute;
   right: 10px;
   top: 500px;
+}
+.paintings{
+  position: relative;
+}
+.ph{
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+.pics{
+  padding-left: 100px;
+}
+.pic{
+  width: 200px;
+  height: 250px;
+  margin-right: 100px;
+}
+figcaption{
+  font-size: small;
+  padding-top: 20px;
+  text-align: center;
+}
+.pages1{
+  padding: 50px 120px 0 120px;
+}
+.story{
+  position: relative;
+}
+.search1{
+  position: absolute;
+  right: 10px;
+}
+.story-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 1em;
+}
+.story-main p{
+  font-size: small;
+}
+h1.bg{
+  text-transform: uppercase;
+   background: url(/assets/mask.jpg) 0 0 / cover no-repeat;
+   color: #000000;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 /*END main styles*/
