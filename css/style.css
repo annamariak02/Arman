@@ -348,8 +348,8 @@ h1.bg{
   .story-main p{
     font-size: x-small;
   }
-  h1.bg{
-    font-size: 200px;
-  }
+  .big-txt{
+    font-size: 9em;
+}
 }
 /*end responsive*/
