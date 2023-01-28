@@ -275,6 +275,81 @@ h1.bg{
    background: url(/assets/mask.jpg) 0 0 / cover no-repeat;
    color: #000000;
    -webkit-background-clip: text;
+   background-clip: text;
    -webkit-text-fill-color: transparent;
 }
 /*END main styles*/
+/*responsive*/
+@media only screen and (max-width:600px){
+  .wrapper{
+  padding: 0.5em;}
+  nav{
+    align-items: center;
+  }
+  .nav a{
+    margin-right: 1em;
+  }
+  .logo{
+    margin-right: 3em;
+  }
+  h1{
+    color: #c6a15a;
+    font-weight: 500;
+    font-size: 32px;
+  }
+  .cap{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  .pages{
+    position: absolute;
+    top: 200px;
+    left: 10px;
+  }
+  #skull{
+    position: absolute;
+    width: max-content;
+    top: -50px;
+    right: 0px;
+  }
+  .skull{
+    width: 200px;
+  }
+  .search{
+    position: absolute;
+    right: 10px;
+    top: 200px;
+  }
+  .menu{
+    display: none;
+  }
+  .pics{
+    padding-left: 10px;
+  }
+  .pic{
+    width: 100px;
+    height: 130px;
+    margin-right: 100px;
+  }
+  figcaption{
+    font-size: x-small;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .pages1{
+    padding: 30px 10px 0 10px;
+  }
+  .search1{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+  }
+  .story-main p{
+    font-size: x-small;
+  }
+  h1.bg{
+    font-size: 200px;
+  }
+}
+/*end responsive*/
